@@ -1,0 +1,70 @@
+/* reset.css */
+
+/* 1. Use um modelo de caixa mais intuitivo */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remova margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* 3. Evite saltos de altura de linha e garanta uma base sólida */
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none; /* Evita que o iOS altere o tamanho do texto */
+}
+
+/* 4. Melhore a renderização do texto e defina o corpo */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* 5. Melhore a legibilidade de media (imagens, vídeos, etc.) */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Remova estilos de lista (opcional, mas comum em resets) */
+ul, ol {
+  list-style: none;
+}
+
+/* 7. Garanta que âncoras e botões sejam mais fáceis de estilizar */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 8. Tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. Remova animações para utilizadores que preferem redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
