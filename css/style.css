@@ -1,8 +1,39 @@
 /*
     Página de estilo site Portifólio Kelvyn Emanoel
-    @author Kelvyn Emanoel
+    @author Kelvyn Emanoel Cruz
 */
 
-body{
-    background-color: blueviolet;
+/* Smartphone Portrait ################# >>> */
+@media (min-width: 360px) {
+    body{
+        background-color: rgb(15, 149, 154);
+    }
+}
+
+/* Smartphone Landscape ################# >>> */
+@media (min-width: 546px) {
+    body{
+        background-color: burlywood;
+    }
+}
+
+/* Tablet Portrait ################# >>> */
+@media (min-width: 768px) {
+    body{
+        background-color: rgb(231, 106, 43);
+    }
+}
+
+/* Tablet Landscape ################# >>> */
+@media (min-width: 992px) {
+    body{
+        background-color: rgb(81, 169, 36);
+    }
+}
+
+/* Computer ################# >>> */
+@media (min-width: 1280px) {
+    body{
+        background-color: blueviolet;
+    }
 }
