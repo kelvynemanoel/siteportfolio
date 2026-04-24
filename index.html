@@ -1,58 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio Kelvyn Emanoel</title>
-    <meta name="description" content="Bem vindo ao meu portifólio! Aqui você pode conhecer um pouco mais de mim como profissional e descobrir projetos que já estive envolvido.">
-    <link rel="icon" href="img/removed_background-perfil-cut.jpg">
+    <meta
+      name="description"
+      content="Bem vindo ao meu portifólio! Aqui você pode conhecer um pouco mais de mim como profissional e descobrir projetos que já estive envolvido."
+    />
+    <link rel="icon" href="img/logo_site_portifólio.svg" />
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- CABEÇALHO -->
-     <header>
-        <div class="Container">
-        
+    <header id="inicio">
+      <div class="Container Flex">
+        <div id="logo">
+          <img src="img/logo_site_portifólio.png" alt="" />
         </div>
-     </header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <!-- tag pra criar uma caixa de verificação -->
+          <label for="check">&#x268c;</label>
+          <!-- serve para definir um rótulo ou legenda para elementos de formulário -->
+
+          <!-- para criar abaixo -> ul>li*4>a -->
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <!-- DESTAQUE -->
-      <main>
-        <div class="Container">
-            <h1>Portifólio Kelvyn Emanoel</h1>
-            <h2>Prazer em te conhecer...</h2>
-            <p>Bem vindo ao meu portifólio online, sinta-se a vontade para conhecer melhor meus trabalhos.</p>
-        </div>
-      </main>
-    
+    <main>
+      <div class="Container">
+        <h1>Portifólio Kelvyn Emanoel</h1>
+        <h2>Prazer em te conhecer...</h2>
+        <p>
+          Bem vindo ao meu portifólio online, sinta-se a vontade para conhecer
+          melhor meus trabalhos.
+        </p>
+      </div>
+    </main>
+
     <!-- SOBRE -->
-     <section>
-        <div class="Container">
-            <h3>Me conheça um pouco mais</h3>
-            <p></p>
-        </div>
-     </section>
+    <section id="sobre">
+      <div class="Container">
+        <h3>Me conheça um pouco mais</h3>
+        <p></p>
+      </div>
+    </section>
 
     <!-- PROJETOS -->
-     <section>
-        <div class="Container">        
-            <h3>Descubra meus projetos</h3>
-            <h4>Projeto 1</h4>
-            <h4>Projeto 2</h4>
-            <h4>Projeto 3</h4>
-            <h4>Projeto 4</h4>
-        </div>
-     </section>
-    
+    <section id="projetos">
+      <div class="Container">
+        <h3>Descubra meus projetos</h3>
+        <h4>Projeto 1</h4>
+        <h4>Projeto 2</h4>
+        <h4>Projeto 3</h4>
+        <h4>Projeto 4</h4>
+      </div>
+    </section>
+
     <!-- RODAPÉ -->
-     <footer>
-        <div class="Container">
-        
-        </div>
-     </footer>
-</body>
+    <footer id="contato">
+      <div class="Container"></div>
+    </footer>
+
+    <a href="#inicio" id="topo"><img src="img/circulo-seta-pra-cima.svg" alt="seta para voltar ao topo">
+    </a>
+  </body>
 </html>

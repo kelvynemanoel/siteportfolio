@@ -23,10 +23,39 @@ h3, h4 {
     margin: 0 auto;
 }
 
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+/* Topo ################# >>> */
+#topo {
+    min-width: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Header ################# >>> */
+#logo img{
+    max-width: 50px;
+    margin-top: 80%;
+}
+
+header {
+    height: 80px;
+}
+
+
 /* Smartphone Portrait ################# >>> */
 @media (min-width: 360px) {
     body{
         background-color: rgb(15, 149, 154);
+    }
+
+    #logo img {
+        margin-left: 80%;
     }
 }
 
@@ -61,6 +90,10 @@ h3, h4 {
     .Container {
         max-width: 960px;
     }
+
+    #logo img {
+        margin-left: 0;
+    }
 }
 
 /* Computer ################# >>> */
@@ -72,4 +105,5 @@ h3, h4 {
     .Container {
         max-width: 1140px;
     }
+
 }
