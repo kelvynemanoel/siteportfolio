@@ -11,6 +11,11 @@ h1,h2 {
     font-size: 1em;
 }
 
+li {
+    font-family: "Krona One", sans-serif;
+    font-size: 0.8em;
+}
+
 h3, h4 {
   font-family: "Inconsolata", monospace;
   font-style: normal;
@@ -31,10 +36,10 @@ h3, h4 {
 
 /* Topo ################# >>> */
 #topo {
-    min-width: 50px;
+    width: 60px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 30px;
+    bottom: 30px;
 }
 
 /* Header ################# >>> */
@@ -45,25 +50,49 @@ h3, h4 {
 
 header {
     height: 80px;
+    margin-bottom: 25%;
 }
 
 
 /* Smartphone Portrait ################# >>> */
 @media (min-width: 360px) {
-    body{
-        background-color: rgb(15, 149, 154);
-    }
-
+    /* Cabeçalho */
     #logo img {
         margin-left: 80%;
     }
+
+    #check {
+        display: none;
+    }
+
+    label {
+        font-size: 2em;
+        padding-right: 15px;
+    }
+
+    nav ul {
+        background-color: rgb(199, 179, 153);
+        height: 100vh;
+        position: fixed;
+        top: 89px;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+
+    }
+
+    nav ul li {
+        padding: 20px;
+        border-bottom: 2px solid #987699;
+    }
+
 }
 
 /* Smartphone Landscape ################# >>> */
 @media (min-width: 546px) {
-    body{
-        background-color: burlywood;
-    }
     /* Layout */
     .Container {
         max-width: 540px;
@@ -72,9 +101,6 @@ header {
 
 /* Tablet Portrait ################# >>> */
 @media (min-width: 768px) {
-    body{
-        background-color: rgb(231, 106, 43);
-    }
     /* Layout */
     .Container {
         max-width: 720px;
@@ -83,9 +109,6 @@ header {
 
 /* Tablet Landscape ################# >>> */
 @media (min-width: 992px) {
-    body{
-        background-color: rgb(81, 169, 36);
-    }
     /* Layout */
     .Container {
         max-width: 960px;
@@ -93,7 +116,34 @@ header {
 
     #logo img {
         margin-left: 0;
+        margin-bottom: 10%;
     }
+
+    /*  Cabeçalho */
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 10%;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color: chartreuse;
+    }
+
 }
 
 /* Computer ################# >>> */
