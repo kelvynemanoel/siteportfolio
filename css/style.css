@@ -8,106 +8,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 
-li {
-    font-family: "Krona One", sans-serif;
-    font-size: 0.8em;
+:root {
+    --cor-primaria: chartreuse;
+    --cor-menu: rgba(127, 255, 0, 0.2);
+    --cor-fundo: rgb(243, 240, 236);
 }
 
-h3, h4, p {
-  font-family: "Comfortaa", sans-serif;
-}
+/*nav ul li {
+    background-color: chartreuse;
+    transition: all 0.3s ease;
+}*/
 
-/* Layout */
-body {
-    background-color: rgb(243, 240, 236);
-}
-
-.Container, main {
-    margin: 0 auto;
-}
-
-.Flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Seta Topo ################# >>> */
-#topo {
-    width: 60px;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-}
-
-/* Header ################# >>> */
-#logo img{
-    max-width: 50px;
-}
-
-header {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-nav {
-    max-height: 45px;
-    padding: 0 30px;
-    background-color: rgba(127, 255, 0, 0.2);
-    border-radius: 50px;
-}
-
-nav ul li {
-    background-color: #987699;
-}
 
 /* Main ################# >>> */
 
-h1 {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    padding: 5px 10px;
-    background-color: chartreuse;
-    width: 250px;
-}
-
-h2 {
-    font-family: "Krona One", sans-serif;
-    font-size: 3.2em;
-    padding: 5px 0 20px 0;
-}
-
-p {
-    font-weight: 500;
-}
 
 
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 0;
-}
 
-main div {
-    max-width: 500px;
-}
 
-main img {
-    width: 300px;
-    border-radius: 20%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /*0 2px 4px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.1);*/
-}
+
+/* Projetos ################# >>> */
+
+
 
 
 
 /* Smartphone Portrait ################# >>> */
 @media (min-width: 360px) {
-    /* Cabeçalho */
-    #logo img {
-        margin-left: 80%;
+    li {
+        font-family: "Krona One", sans-serif;
+        font-size: 0.8em;
     }
+
+    h1,
+    p {
+        font-family: "Comfortaa", sans-serif;
+    }
+
+    h2,
+    h4,
+    h3 {
+        font-family: "Krona One", sans-serif;
+    }
+
+
+    /* Layout */
+    body {
+        background-color: var(--cor-fundo);
+    }
+
+    .Container {
+        max-width: 326px;
+    }
+
+    .Container,
+    main {
+        margin: 0 auto;
+    }
+
+    .Flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #topo img {
+        z-index: 200;
+    }
+
+    /* Seta Topo ################# >>> */
+    #topo {
+        width: 60px;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    /* Header ################# >>> */
+    #logo img {
+        max-width: 50px;
+    }
+
+    header {
+        padding-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    /* Cabeçalho */
 
     #check {
         display: none;
@@ -115,94 +101,121 @@ main img {
 
     label {
         font-size: 2em;
-        padding-right: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        max-height: 45px;
+        padding: 0 15px;
+        background-color: var(--cor-menu);
+        border-radius: 50px;
     }
 
     nav ul {
-        background-color: rgb(199, 179, 153);
-        height: 100vh;
         position: fixed;
-        top: 89px;
+        top: 18vh;
         right: -100%;
+        z-index: 100;
+        background-color: var(--cor-menu);
+        backdrop-filter: blur(5px);
+        border-radius: 20px 0 0 20px;
+        height: 80vh;
         transition: all 0.5s;
     }
 
-    #check:checked ~ ul {
+    #check:checked~ul {
         right: 0;
     }
 
     nav ul li {
-        padding: 12px 10px;
-        border-bottom: 2px solid #987699;
+        padding: 20px 40px;
     }
 
-}
-
-/* Smartphone Landscape ################# >>> */
-@media (min-width: 546px) {
-    /* Layout */
-    .Container {
-        max-width: 540px;
-    }   
-}
-
-/* Tablet Portrait ################# >>> */
-@media (min-width: 768px) {
-    /* Layout */
-    .Container {
-        max-width: 720px;
-    }
-}
-
-/* Tablet Landscape ################# >>> */
-@media (min-width: 992px) {
-    /* Layout */
-    .Container {
-        max-width: 960px;
+    nav ul li:hover {
+        background-color: var(--cor-primaria);
     }
 
-    #logo img {
-        margin-left: 0;
-        margin-bottom: 10%;
+    /* Main */
+    h1 {
+        font-weight: 700;
+        background-color: var(--cor-primaria);
+        font-size: 0.8em;
+        padding: 3px 10px;
+        width: 50%;
     }
 
-    /*  Cabeçalho */
-    label {
-        display: none;
+    h2 {
+        padding: 5px 0 20px 0;
+        font-size: 2em;
     }
 
-    nav ul {
-        position: static;
-        height: auto;
-        background-color: transparent;
-        /**/
+    p {
+        font-size: 0.8em;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div {
+        max-width: 500px;
+        padding-top: 150px;
+        padding-bottom: 30px;
+    }
+
+    main img {
+        margin: 80px 70px;
+        width: 200px;
+        border-radius: 5%;
+        transform: rotate(5deg);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        /*0 2px 4px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.1);*/
+    }
+
+    /* Projetos */
+    h3 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .Galeria {
         display: flex;
-        gap: 20px;
-        margin-top: 0;
-        /**/
+        flex-wrap: wrap;
     }
 
-    nav ul li {
-        float: none; /*float: left*/
-        border: 0;
+    .Galeria img {
+        border-radius: 20px;
     }
 
-    nav ul li a {
-        color: black;
+    .Galeria h4 {
+        font-size: 1.5em;
+        position: relative;
+        top: -50px;
+        right: -150px;
+        background-color: rgb(243, 240, 236, 0.6);
+        backdrop-filter: blur(8px);
+        padding: 3px 18px;
+        border-radius: 30px;
+        max-width: 50%;
     }
 
-    nav ul li a:hover {
-        color: chartreuse;
+    /* Sobre mim */
+
+
+    /* Rodapé */
+    footer {
+        background-color: var(--cor-menu);
     }
 
-}
-
-/* Computer ################# >>> */
-@media (min-width: 1280px) {
-    
-    /* Layout */
-    .Container, main{
-        max-width: 1140px;
+    footer .Container {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
     }
 
+    footer a {
+        font-size: 1em;
+    }
 }

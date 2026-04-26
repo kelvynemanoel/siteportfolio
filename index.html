@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="inicio">
     <!-- CABEÇALHO -->
-    <header id="inicio">
+    <header>
       <div class="Container Flex">
         <div id="logo">
           <img src="img/logo_site_portfólio.png" alt="" />
@@ -29,7 +29,7 @@
 
           <!-- para criar abaixo -> ul>li*4>a -->
           <ul>
-            <li><a href="#inicio">início</a></li>
+            <li><a href="index.html">início</a></li>
             <li><a href="#sobre">sobre mim</a></li>
             <li><a href="#projetos">projetos</a></li>
             <li><a href="#contato">contato</a></li>
@@ -39,25 +39,39 @@
     </header>
 
     <!-- DESTAQUE -->
-    <main>
+    <main class="Container">
       <div>
         <h1>Kelvyn Emanoel</h1>
         <h2>Prazer em te conhecer...</h2>
         <a href="#" target="_blank"></a>
         <p>
-          Bem vindo ao meu portfólio online, sinta-se a<br> vontade para conhecer
-          melhor meus trabalhos.
+          Bem vindo ao meu portfólio online, sinta-se à vontade para me conhecer
+          melhor através dos meus trabalhos.
         </p>
       </div>
 
-      <img src="img/removed_background-perfil-cut.jpg" alt="foto kelvyn emanoel">
+      <img
+        src="img/removed_background-perfil-cut.jpg"
+        alt="foto kelvyn emanoel"
+      />
     </main>
 
     <!-- PROJETOS -->
     <section id="projetos">
       <div class="Container">
         <h3>Descubra meus projetos</h3>
-        <h4>Projeto 1</h4>
+
+        <div class="Galeria">
+          <a href="#">
+            <img src="img/projeto-veegan.png" alt="projeto 1" />
+            <h4>Veegan.</h4>
+          </a>
+
+          <a href=""><img src="" alt="" /></a>
+          <a href=""><img src="" alt="" /></a>
+          <a href=""><img src="" alt="" /></a>
+        </div>
+
         <h4>Projeto 2</h4>
         <h4>Projeto 3</h4>
         <h4>Projeto 4</h4>
@@ -72,12 +86,28 @@
       </div>
     </section>
 
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="Container">
+        <h3>Me conheça um pouco mais</h3>
+        <p></p>
+      </div>
+    </section>
+
     <!-- RODAPÉ -->
     <footer id="contato">
-      <div class="Container"></div>
+      <div class="Container">
+        <a href="#" target="_blank">telefone de contato</a>
+        <a href="#" target="_blank">email de contato</a>
+        <a href="#" target="_blank">sites extras de contato</a>
+      </div>
     </footer>
 
-    <a href="#inicio" id="topo"><img src="img/circulo-seta-pra-cima.svg" alt="seta para voltar ao topo">
+    <a href="#inicio" id="topo"
+      ><img
+        src="img/circulo-seta-pra-cima.svg"
+        alt="seta para voltar ao topo"
+      />
     </a>
   </body>
 </html>
