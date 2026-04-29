@@ -13,13 +13,21 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body id="inicio">
     <!-- CABEÇALHO -->
     <header>
       <div class="Container Flex">
         <div id="logo">
-          <img src="img/logo_site_portfólio.png" alt="" />
+          <img src="img/logo_site_portfólio.png" alt="Logotipo Kelvyn" />
         </div>
         <nav>
           <input type="checkbox" id="check" />
@@ -59,15 +67,18 @@
     <!-- SOBRE -->
     <section id="sobre">
       <div class="sobre-conteudo Container">
-        <h3>Conheça um pouco mais <span>sobre mim</span></h3>
+        <h3>
+          Conheça um pouco<br />
+          mais <span>sobre mim</span>
+        </h3>
 
         <div class="sobre-conteudo-paragrafo">
           <p>
             Sou estudante de Tecnologia da Informação com conclusão prevista
-            para junho de 2026. Minha trajetória é marcada por dois anos de
-            experiência prática como estagiário em suporte técnico e
-            infraestrutura de rede, onde desenvolvi uma visão analítica sobre a
-            resolução de problemas e a importância de sistemas robustos.
+            para o primeiro semestre de 2026. Minha trajetória é marcada por
+            dois anos de experiência prática como estagiário em suporte técnico
+            e infraestrutura de rede, onde desenvolvi uma visão analítica sobre
+            a resolução de problemas e a importância de sistemas robustos.
           </p>
 
           <p>
@@ -82,9 +93,9 @@
     </section>
 
     <!-- PROJETOS -->
-    <section class="Container" id="projetos">
-      <h3>Projetos</h3>
-      <p>
+    <section class="projetos Container" id="projetos">
+      <h3>Meus Projetos</h3>
+      <p id="projetos-paragrafo">
         Bem-vindo à minha galeria de projetos. Aqui reúno as soluções que
         desenvolvi ao longo da minha trajetória. Cada trabalho reflete meu
         compromisso com código limpo, design responsivo e foco na experiência do
@@ -104,7 +115,7 @@
                 preparo de receitas.
               </p>
 
-              <p id="galeria-card-info-mensagem">Clique e veja o repositório</p>
+              <p id="galeria-card-info-mensagem">Clique para ver no GitHub</p>
             </div>
           </a>
         </div>
@@ -121,7 +132,7 @@
                 preparo de receitas.
               </p>
 
-              <p id="galeria-card-info-mensagem">Clique e veja o repositório</p>
+              <p id="galeria-card-info-mensagem">Clique para ver no GitHub</p>
             </div>
           </a>
         </div>
@@ -138,7 +149,7 @@
                 preparo de receitas.
               </p>
 
-              <p id="galeria-card-info-mensagem">Clique e veja o repositório</p>
+              <p id="galeria-card-info-mensagem">Clique para ver no GitHub</p>
             </div>
           </a>
         </div>
@@ -146,14 +157,44 @@
     </section>
 
     <!-- Contato -->
-    <address id="contato"></address>
+    <address class="contato Container" id="contato">
+      <div class="contato-texto">
+        <h4>Contato</h4>
+        <p>Visite meu perfil nas redes<br> e me <span>mande uma mensagem.</span></p>
+      </div>
+
+      <div class="contato-botoes">
+        <a
+          href="https://www.linkedin.com/in/kelvyn-emanoel-cruz-de-souza-1b4723247/"
+          target="_blank"
+          title="Clique para abrir meu perfil no Linkedin"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>Linkedin</a
+        >
+
+        <a
+          href="https://github.com/kelvynemanoel"
+          target="_blank"
+          title="Clique para abrir meu perfil no GitHub"
+        >
+          <i class="fa-brands fa-github"></i>GitHub
+        </a>
+
+        <a
+          href="https://www.behance.net/kelvyncruzf"
+          target="_blank"
+          title="Clique para abrir meu perfil no Behance"
+        >
+          <i class="fa-brands fa-behance"></i>Behance
+        </a>
+      </div>
+    </address>
 
     <!-- RODAPÉ -->
-    <footer>
+    <footer class="rodape">
       <div class="Container">
-        <a href="#" target="_blank">telefone de contato</a>
-        <a href="#" target="_blank">email de contato</a>
-        <a href="#" target="_blank">sites extras de contato</a>
+        <img src="img/logo_site_portfólio.png" alt="Logotipo Kelvyn" />
+        <h3>&#xa9;Desenvolvido por <span>Kelvyn Emanoel</span></h3>
       </div>
     </footer>
 
