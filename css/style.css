@@ -527,11 +527,19 @@ html {
     width: 70%;
   }
 
+  .sobre-conteudo h3 {
+    font-size: 1.8em;
+  }
+
   /* Projetos */
   #projetos-paragrafo {
     padding-bottom: 20px;
     width: 75%;
     margin: 0 auto;
+  }
+
+  .projetos h3 {
+    font-size: 1.8em;
   }
 
   .galeria {
@@ -540,6 +548,10 @@ html {
 
   .galeria-card {
     max-width: 70%;
+  }
+
+  .galeria-card-info h4 {
+    font-size: 1.6em;
   }
 
   .galeria-card-info-mensagem {
@@ -595,10 +607,6 @@ html {
     width: 80%;
     justify-content: space-between;
     align-items: baseline;
-  }
-
-  .sobre-conteudo h3 {
-    font-size: 1.6em;
   }
 
   .sobre-conteudo-paragrafo {
