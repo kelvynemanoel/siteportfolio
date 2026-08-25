@@ -24,7 +24,7 @@ html {
 /* Smartphone Portrait ################# >>> */
 @media (min-width: 360px) {
   li {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-titulo);
     font-size: 0.8em;
   }
 
