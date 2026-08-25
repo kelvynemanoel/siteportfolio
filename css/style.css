@@ -22,10 +22,10 @@ html {
 }
 
 /* Smartphone Portrait ################# >>> */
-@media (min-width: 360px) {
+@media (max-width: 100dvw){
   li {
     font-family: var(--fonte-titulo);
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   h1,
@@ -75,6 +75,7 @@ html {
   }
 
   /* Header ################# >>> */
+
   #logo img {
     max-width: 50px;
   }
@@ -91,7 +92,7 @@ html {
   }
 
   label {
-    font-size: 2em;
+    font-size: 2rem;
     padding: 15px;
   }
 
@@ -100,10 +101,11 @@ html {
     padding: 0 15px;
     left: 250px;
     background-color: var(--cor-menu);
-    /* backdrop-filter: blur(5px);  entender o pq do erro*/
+    /*backdrop-filter: blur(5px);  entender o pq do erro*/
     border-radius: 50px;
     overflow: hidden;
     position: fixed;
+    left: calc((100vw - 360px)/2);
     z-index: 1;
   }
 
@@ -131,18 +133,18 @@ html {
   h1 {
     font-weight: 700;
     background-color: var(--cor-primaria);
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding: 3px 10px;
     width: 50%;
   }
 
   h2 {
     padding: 5px 0 20px 0;
-    font-size: 2em;
+    font-size: 2.3rem;
   }
 
   p {
-    font-size: 0.8em;
+    font-size: 0.9rem;
   }
 
   main {
@@ -179,7 +181,7 @@ html {
   }
 
   .sobre-conteudo h3 {
-    font-size: 1.2em;
+    font-size: 1.5rem;
     text-align: left;
     padding-bottom: 50px;
   }
@@ -188,10 +190,6 @@ html {
     background-color: var(--cor-primaria);
     padding: 5px 10px;
     text-transform: capitalize;
-  }
-
-  .sobre-conteudo-paragrafo {
-    max-width: 80%;
   }
 
   .sobre-conteudo-paragrafo p {
@@ -205,13 +203,13 @@ html {
   }
 
   .sobre-conteudo-paragrafo span {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-family: var(--fonte-titulo);
   }
 
   /* Projetos */
   h3 {
-    font-size: 1.4em;
+    font-size: 1.6rem;
     text-align: center;
   }
 
@@ -266,7 +264,7 @@ html {
   }
 
   .galeria-card-info-mensagem {
-    font-size: 0.7em;
+    font-size: 0.9rem;
     text-align: left;
     font-weight: 900;
     width: 70%;
@@ -298,7 +296,7 @@ html {
   }
 
   .contato-texto p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .contato-texto span {
@@ -360,7 +358,7 @@ html {
   }
 
   .rodape h3 {
-    font-size: 0.6em;
+    font-size: 0.6rem;
   }
 
   .rodape h3 span {
@@ -439,7 +437,7 @@ html {
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   /* Galeria */
@@ -503,16 +501,16 @@ html {
 
   /* Main */
   h1 {
-    font-size: 1em;
+    font-size: 1rem;
     padding: 5px 10px;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
   }
 
@@ -528,7 +526,7 @@ html {
   }
 
   .sobre-conteudo h3 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   /* Projetos */
@@ -539,7 +537,7 @@ html {
   }
 
   .projetos h3 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   .galeria {
@@ -551,11 +549,11 @@ html {
   }
 
   .galeria-card-info h4 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .galeria-card-info-mensagem {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     width: 50%;
     margin-top: 30px;
   }
@@ -573,7 +571,7 @@ html {
   /* Rodapé */
   .rodape div {
     padding: 40px 0;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 }
 
@@ -594,7 +592,7 @@ html {
 
   /* Main */
   h2 {
-    font-size: 3.2em;
+    font-size: 3.2rem;
   }
 
   main div {
@@ -615,7 +613,7 @@ html {
 
   /* Projetos */
   .projetos h3 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .galeria-card {
@@ -629,23 +627,23 @@ html {
   }
 
   .galeria-card-info h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 10px 0;
   }
 
   .galeria-card-info-mensagem {
     margin: 20px 0;
-    font-size: 1em;
+    font-size: 1rem;
     width: 50%;
   }
 
   /* Contato */
   .contato-texto h4 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .contato-texto p {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .contato-botoes a {
@@ -658,7 +656,7 @@ html {
   .contato-botoes a p {
     display: contents;
     font-family: var(--fonte-titulo);
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 
   .contato-botoes i {
@@ -681,13 +679,13 @@ html {
   }
 
   h1 {
-    font-size: 1em;
+    font-size: 1rem;
     padding-left: 10px;
     width: 250px;
   }
 
   h2 {
-    font-size: 3.2em;
+    font-size: 3.2rem;
   }
 
   /* Projetos */
@@ -747,14 +745,14 @@ html {
   }
 
   .galeria-card-info h4 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: normal;
     color: #000;
   }
 
   .galeria-card-info p {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
     color: #000;
     padding-top: 10px;
@@ -811,7 +809,7 @@ html {
   }
 
   .contato-texto p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     max-width: 380px;
   }
 
@@ -842,6 +840,6 @@ html {
   /* Rodapé */
   .rodape div {
     padding: 50px 0;
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 }
